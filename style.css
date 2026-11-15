@@ -1,0 +1,260 @@
+body{
+    background-color: #0b272a;
+}
+nav{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 15px 20px ;
+    position: sticky;
+    background-color: #dad7c5;
+    top: 0;
+}
+nav .name{
+    font-size: 22px;
+    font-weight: 700;
+    color: #0b272a;
+}
+nav ul{
+    list-style: none;
+    display:flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    margin-left: 100px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #244747;
+    font-weight: 600;
+    
+}
+nav ul li a:hover{
+    color:#0b272a;
+    font-weight: 700;
+}
+.me{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 60px 80px;
+}
+.contenu{
+    margin-top: 10px;
+    color: #dad7c5;
+}
+.contenu h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 25;
+    color: #7b9c92;
+}
+.contenu h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+.contenu h4{
+    color:#4e706b;
+    margin-bottom:15px;
+}
+.contenu p{
+    margin-bottom: 30px;
+}
+.contenu span{
+    color:#7b9c92;
+}
+.btn{
+    background-color: #7b9c92;
+    color: #0b272a;
+    border-radius: 20px;
+    justify-self: left;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn:hover{
+    background:#dad7c5;
+    color: #0b272a;
+}
+.photo{
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #4e706b;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #7b9c92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px #7b9c92;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.skills{
+    padding: 60px 80px;
+    text-align: center;
+}
+.skills h2{
+    color: #dad7c5;
+    margin-bottom: 40px;
+}
+
+.skill-category{
+    background-color: #244747;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 700px;
+    text-align: left;
+    box-shadow: 0 0 10px #1a2f2f;
+}
+
+.skill-category h3{
+    color: #7b9c92;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+.skill-category p{
+    color: #dad7c5;
+    margin-bottom: 0px;
+}
+.skill span{
+    color: #7b9c92;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.bar {
+    color: #dad7c5;
+}
+.bar div{
+    color: #244747;
+}
+.html{
+    background:#7b9c92; 
+}
+.css{
+    background:#4e706b; 
+}
+.js{
+    background:#dad7c5; 
+}
+.bootstrap{
+    background:#244747; 
+}
+.canva{
+    background:#7b9c92; 
+}
+
+.projects{
+    background-color: #0b272a;
+    padding: 40px;
+    color: #dad7c5;
+    text-align: center;
+}
+.projects-container{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.project-card{
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #244747;
+    padding: 20px;
+    background-color: #244747;
+    transition: 0.3s ease;
+}
+.project-card h3{
+    color: #7b9c92;
+    margin-bottom: 15px;
+}
+.badge{
+    padding:5px 15px;
+    background-color: #0b272a;
+    color: #dad7c5;
+    border-radius: 15px;
+    margin-top:10px;
+}
+.footer{
+    background-color: #0b272a;
+    color: #dad7c5;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 1px solid #244747;
+    font-size: 14px;
+}
+.contact{
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #0b272a;
+    color: #dad7c5;
+}
+.contact h2{
+    color: #dad7c5;
+    margin-bottom: 25px;
+}
+.contact p{
+    margin-bottom: 25px;
+}
+.contact a{
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+    background-color: #244747;
+    color: #dad7c5;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+}
+.contact a:hover{
+    background-color: #7b9c92;
+    color: #0b272a;
+}
+
+@media(max-width:768px){
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul{
+        margin-left: 0;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .me{
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 25px;
+    }
+    .contenu{
+        margin: 0;
+    }
+    .photo{
+        width: 220px;
+        height: 220px;
+    }
+    .skills{
+        padding: 40px 20px;
+    }
+    .skill-category{
+        width: 100%;
+    }
+    .projects-container{
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+        align-items: center;
+    }
+    .project-card{
+        width: 90%;
+    }
+}
